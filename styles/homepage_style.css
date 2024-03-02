@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:root{
+    --clr-dark:#222222;  
+    --clr-nature:#70c247;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@450&display=swap);
+.body{
+    background-color: var(--clr-dark);
+}
+
+.side{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: absolute;
+}
+
+.side .title{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 7vw;    
+    margin: 0px 16vw;
+    width: 80vw;
+    text-align: justify;
+}
+
+#left-side{
+    background-color: var(--clr-dark);
+    z-index: 2;
+}
+
+#right-side{
+    background-color: var(--clr-nature);
+    z-index: 1;
+}
+#right-side .title{
+    color: var(--clr-dark);
+}
+
+#left-side .title{
+    color: white;
+}
+
+.container{
+    position:absolute;
+    display: flex;
+    width: 10rem;
+    padding: 0.5rem;
+    align-items: baseline;
+    margin-top: 32rem;
+    margin-right: 45rem;    
+    border-radius: 30px;
+    border: 2px solid white;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.container_item{
+    color: white;
+    width: 5rem;
+    margin: 0rem;
+    padding: 0.3rem 0.2rem;
+    justify-content: center;    
+}
+
+#nav_symbol .container_item{
+    font-size: 0.3rem;    
+    margin-left: 25em;
+}
+#nav_text .container_item{
+    font-size: 0.8rem;   
+    margin-right: 0.4rem; 
+}
+
+.fancy {
+    font-family: "Permanent Marker", cursive;
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+  }
+
+#left-side .fancy{
+    color: var(--clr-nature);
+}
+
+#right-side .fancy{
+    color: white;
+}
+
+.button{
+    position: absolute;
+    display: grid;
+    text-align: center;
+    width: 15vw;
+    height: 10vh;
+    padding: 0.5rem;
+    align-items: center;
+    margin-top: 32rem;
+    margin-left: 45rem;    
+    border-radius: 30px;
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-decoration: none;
+}
+
+
+
+#left-side .button{
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    color: var(--clr-dark);
+}
+#right-side .button{
+    border: 2px solid var(--clr-dark);
+    background-color: var(--clr-dark);
+    color: whitesmoke;
+}
+#left-side .button:hover{
+    background-color: var(--clr-nature);
+    border: var(--clr-nature);
+    color: whitesmoke;
+    cursor: pointer;
+    transform: translateY(-15px) scale(1.1);
+}
+#right-side .button:hover{
+    background-color: whitesmoke;
+    border: whitesmoke;
+    color: var(--clr-dark);
+    cursor: pointer;
+    transform: translateY(-15px) scale(1.1);
+}
+  
+/* body{
+    height:100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+#image-track > .image{
+    width: 40vmin; 
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image-track{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(0%, -50%);
+} */
