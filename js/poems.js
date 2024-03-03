@@ -12,8 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-window.ontouchstart = window.onclick
-window.ontouchend = window.ondblclick
+
 function src_changer(){
     document.getElementById("img3").src = "../imgs/grn_blur_out.jpg";
     }
